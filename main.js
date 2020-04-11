@@ -7,7 +7,8 @@ function getKey(url) {
 
 let downloadlink = "";
 
-let song_hash = $(".tabs:not(:last-child), .message:not(:last-child), .level:not(:last-child), .breadcrumb:not(:last-child), .highlight:not(:last-child), .block:not(:last-child), .title:not(:last-child), .subtitle:not(:last-child), .table-container:not(:last-child), .table:not(:last-child), .progress:not(:last-child), .notification:not(:last-child), .content:not(:last-child), .box:not(:last-child) > b").text();
+let song_hash = $("div.has-shadow > b").text();
+console.log(song_hash);
 song_hash = /[a-fA-F0-9]{40}/.exec(song_hash);
 
 var key = JSON.parse(getKey(`https://beatsaver.com/api/maps/by-hash/${song_hash}`)).key
@@ -20,50 +21,75 @@ $(function () {
                 background-image: linear-gradient(to left,#fa152d,#9c49c7 54%,#137bf6); 
                 color: white; 
                 font-weight: 600; 
-                width: auto; 
+                width: fit-content; 
                 text-align: center;
                 display: block;
                 margin: auto;
                 border-style: none;
+                padding: 9.75px;
+                padding-top: 6px;
             }
             
             .saberSaverButton:hover {
                 color: #eeeeee; 
             }
-            
+                        
+            /* Tooltip container */
             .tooltip {
                 position: relative;
-                display: inline-block;
+                border-bottom: 1px dotted black; /* If you want dots under the hoverable text */
+                font-size: small;
             }
             
             /* Tooltip text */
             .tooltip .tooltiptext {
                 visibility: hidden;
                 width: 120px;
-                bottom: -120%;
-                left: 50%;
-                margin-left: -60px;
-                background-color: black;
+                height: fit-content;
+                background-color: #555;
                 color: #fff;
                 text-align: center;
                 padding: 5px 0;
                 border-radius: 6px;
-                 
-                /* Position the tooltip text - see examples below! */
+            
+                /* Position the tooltip text */
                 position: absolute;
                 z-index: 1;
+                bottom: 125%;
+                left: 50%;
+                margin-left: -60px;
+            
+                /* Fade in tooltip */
+                opacity: 0;
+                transition: opacity 0.3s;
             }
-
+            
+            /* Tooltip arrow */
+            .tooltip .tooltiptext::after {
+                content: "";
+                position: absolute;
+                top: 100%;
+                left: 50%;
+                margin-left: -5px;
+                border-width: 5px;
+                border-style: solid;
+                border-color: #555 transparent transparent transparent;
+            }
+            
             /* Show the tooltip text when you mouse over the tooltip container */
             .tooltip:hover .tooltiptext {
                 visibility: visible;
+                opacity: 1;
             }
+
+            
         </style>
-        <hr style="margin: 0.1rem 0 0.5rem;">
-        <a href="beatsaver://${key}" class="button tooltip saberSaverButton">  Install  
-              <span class="tooltiptext">Tooltip text</span>
-        </a>
+        <div style="width: 64px">
+            <hr style="margin: 0.1rem 0 0.5rem;">
+            <a href="beatsaver://${key}" class="button tooltip saberSaverButton"><img src="https://bsaber.com/wp-content/themes/beastsaber-wp-theme/assets/svg/ico-cloud-download.svg">
+                  <span class="tooltiptext">One click install! <br> Must be enabled <br> in Mod Assistant.</span>
+            </a>
+        </div>
     `);
 });
 
-// console.log(key);

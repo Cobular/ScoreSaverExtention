@@ -4,13 +4,13 @@
   "description": "Give you a super duper ",
   "manifest_version": 2,
   "permissions": [
-    "*://*.scoresaber.com/leaderboard/69331",
+    "*://*.scoresaber.com/leaderboard/*",
     "storage"
   ],
   "content_scripts": [
     {
       "matches": [
-        "*://*.scoresaber.com/leaderboard/69331"
+        "*://*.scoresaber.com/leaderboard/*"
       ],
       "js": [
         "jquery.min.js",
