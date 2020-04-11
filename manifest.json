@@ -1,0 +1,22 @@
+{
+  "name": "ScoreSaver Link",
+  "version": "1.5",
+  "description": "Give you a super duper ",
+  "manifest_version": 2,
+  "permissions": [
+    "*://*.scoresaver.com/leaderboard/69331",
+    "storage"
+  ],
+  "content_scripts": [
+    {
+      "matches": [
+        "*://*.scoresaber.com/leaderboard/69331"
+      ],
+      "js": [
+        "jquery.min.js",
+        "main.js"
+      ],
+      "run_at": "document_end"
+    }
+  ]
+}
