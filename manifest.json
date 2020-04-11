@@ -1,10 +1,10 @@
 {
   "name": "ScoreSaver Link",
-  "version": "1.5",
+  "version": "1.6",
   "description": "Give you a super duper ",
   "manifest_version": 2,
   "permissions": [
-    "*://*.scoresaver.com/leaderboard/69331",
+    "*://*.scoresaber.com/leaderboard/69331",
     "storage"
   ],
   "content_scripts": [
