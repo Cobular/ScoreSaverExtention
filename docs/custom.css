@@ -1,0 +1,70 @@
+/* This is where I can put custom css to overrite the defaults, if I can figure it out */
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+* {
+    font-family: "Roboto", sans-serif;
+}
+
+body {
+    background: #FFFFFF !important;
+}
+
+.jumbotron {
+    background: linear-gradient(270deg, #fa152d, #9c49c7, #137bf6);
+    background-size: 600% 600%;
+
+    -webkit-animation: MainGradient 44s ease infinite;
+    -moz-animation: MainGradient 44s ease infinite;
+    animation: MainGradient 44s ease infinite;
+    border-bottom-left-radius: 30%;
+    border-bottom-right-radius: 30%;
+}
+
+@-webkit-keyframes MainGradient {
+    0%{background-position:0% 50%}
+    50%{background-position:100% 51%}
+    100%{background-position:0% 50%}
+}
+@-moz-keyframes MainGradient {
+    0%{background-position:0% 50%}
+    50%{background-position:100% 51%}
+    100%{background-position:0% 50%}
+}
+@keyframes MainGradient {
+    0%{background-position:0% 50%}
+    50%{background-position:100% 51%}
+    100%{background-position:0% 50%}
+}
+
+.jumbotron h1 {
+    color: #FFFFFF;
+    font-weight: normal;
+    font-size: 70pt;
+}
+
+.name {
+    color: #FFFFFF;
+}
+
+.main-carousel {
+    height: 400px;
+}
+
+.carousel-cell {
+    width: 80%; /* full width */
+    height: 400px;
+    background: #222;
+    /* center images in cells with flexbox */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.carousel.is-fullscreen .carousel-cell {
+    height: 100%;
+}
+
+/*.carousel-cell img {*/
+/*    display: block;*/
+/*    max-height: 100%;*/
+/*}*/
