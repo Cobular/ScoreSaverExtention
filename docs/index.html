@@ -1,0 +1,47 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>ScoreSaver Extension</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Bootstrap -->
+    <link href="//cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="custom.css">
+    <link rel="icon" type="image/png" href="../icons/icon_32.png" sizes="32x32">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.8.0/Chart.bundle.min.js"></script>
+    <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
+    <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.0/jquery.js"></script>
+</head>
+<body>
+
+
+<div class="jumbotron text-center">
+    <h1 style="font-weight: 200"><b>ScoreSaver</b> Chrome Extension</h1>
+    <p class="name"></p>
+</div>
+
+<div class="main-carousel">
+    <div class="carousel-cell">AHHHH</div>
+    <div class="carousel-cell">AHHH</div>
+    <div class="carousel-cell">AHHH</div>
+</div>
+
+<script>
+    var flkty = new Flickity( '.main-carousel', {
+        // options
+        cellAlign: 'center',
+        contain: true,
+        wrapAround: true,
+        autoplay: true,
+        imagesLoaded: true,
+        fullscreen: true,
+        lazyLoad: 2
+    });
+</script>
+
+<script src="//cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+</body>
+</html>
