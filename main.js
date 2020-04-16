@@ -37,7 +37,7 @@ $(function () {
             /* Tooltip container */
             .tooltip {
                 position: relative;
-                border-bottom: 1px dotted black; /* If you want dots under the hoverable text */
+                /*border-bottom: 1px dotted black; !* If you want dots under the hoverable text *!*/
                 font-size: small;
             }
             
