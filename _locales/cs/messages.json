@@ -1,0 +1,14 @@
+{
+  "title": {
+    "message": "Snadná instalace ScoreSaber",
+    "description": "Název rozšíření"
+  },
+  "description": {
+    "message": "Přidává velmi snadný způsob stahování skladeb přímo z ScoreSaber.",
+    "description": "The description of the extension"
+  },
+  "button_text": {
+    "message": "Instalace jedním kliknutím! <br> Musí být povoleno <br> v Mod Assistant.",
+    "description": "Text zobrazený po najetí myší na tlačítko"
+  }
+}
