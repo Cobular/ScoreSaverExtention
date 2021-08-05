@@ -1,0 +1,14 @@
+{
+  "title": {
+    "message": "ScoreSaber の簡単なインストーラー",
+    "description": "拡張機能のタイトル"
+  },
+  "description": {
+    "message": "ScoreSaber から直接曲をダウンロードする非常に簡単な方法を追加します。",
+    "description": "The description of the extension"
+  },
+  "button_text": {
+    "message": "ワンクリックインストール! <br> ModAssistant で <br> 有効にする必要があります。",
+    "description": "ボタンにカーソルを合わせると表示されるテキスト"
+  }
+}

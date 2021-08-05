@@ -1,7 +1,7 @@
 {
-  "name": "ScoreSaber Easy Installer",
-  "version": "1.7",
-  "description": "Adds a super easy way to download songs straight from ScoreSaber.",
+  "name": "__MSG_title__",
+  "version": "1.10",
+  "description": "__MSG_description__",
   "manifest_version": 2,
   "permissions": [
     "*://*.scoresaber.com/leaderboard/*"
@@ -23,5 +23,6 @@
       ],
       "run_at": "document_end"
     }
-  ]
+  ],
+  "default_locale": "en"
 }

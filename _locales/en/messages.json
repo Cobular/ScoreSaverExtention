@@ -1,0 +1,14 @@
+{
+  "title": {
+    "message": "ScoreSaber Easy Installer",
+    "description": "The title of the extension"
+  },
+  "description": {
+    "message": "Adds a super easy way to download songs straight from ScoreSaber.",
+    "description": "The description of the extension"
+  },
+  "button_text": {
+    "message": "One click install! <br> Must be enabled <br> in Mod Assistant.",
+    "description": "The text shown when hovering over the button"
+  }
+}
