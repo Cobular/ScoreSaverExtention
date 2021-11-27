@@ -1,6 +1,6 @@
 {
   "name": "__MSG_title__",
-  "version": "1.11",
+  "version": "2.0",
   "description": "__MSG_description__",
   "manifest_version": 2,
   "permissions": [
