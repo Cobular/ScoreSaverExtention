@@ -190,7 +190,7 @@ setInterval(function () {
         console.log("injection happening")
         if (!injection_lock) {
           injection_lock = true
-          let song_hash = hash_element.textContent;
+          let song_hash = hash_element.textContent.trim();
           loadBeatsaverAndInject(`https://api.beatsaver.com/maps/hash/${song_hash}`, showButton)
           injection_lock = false
         }
